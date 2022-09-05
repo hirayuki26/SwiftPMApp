@@ -13,6 +13,7 @@
 		B6A842A828C455950039C7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A842A628C455950039C7FF /* Main.storyboard */; };
 		B6A842AA28C455970039C7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A842A928C455970039C7FF /* Assets.xcassets */; };
 		B6A842AD28C455970039C7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A842AB28C455970039C7FF /* LaunchScreen.storyboard */; };
+		B6A842B628C457540039C7FF /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B6A842B528C457540039C7FF /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A842B628C457540039C7FF /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				B6A842B528C457540039C7FF /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = B6A8429D28C455950039C7FF /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B6A8429428C455950039C7FF;
+			packageReferences = (
+				B6A842B428C457540039C7FF /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = B6A8429E28C455950039C7FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6A842B428C457540039C7FF /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6A842B528C457540039C7FF /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A842B428C457540039C7FF /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6A8429528C455950039C7FF /* Project object */;
 }
